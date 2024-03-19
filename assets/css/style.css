@@ -1,0 +1,14 @@
+body{
+    background:#222;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+section.commingSoon{
+    text-align:center;
+}
