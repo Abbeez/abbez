@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abbez</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>My SPA</title>
 </head>
 <body>
-    <section class="commingSoon">
-        <h1>Ooops! Something awesome will happened.</h1>
-        <p>I'm currently updating my site for my fun and more creative.</p>
-    </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" onclick="navigateTo('/'); return false;">Home</a></li>
+                <li><a href="/about" onclick="navigateTo('/about'); return false;">About</a></li>
+                <li><a href="/contact" onclick="navigateTo('/contact'); return false;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <!-- Content will be dynamically replaced here -->
+    </div>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
