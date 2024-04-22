@@ -51,7 +51,8 @@ a{
 }
 
 main{
-    width:980px;
+    width:100%;
+    max-width:980px;
     padding:40px 28px;
     margin: auto;
 
