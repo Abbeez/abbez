@@ -1,29 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My SPA</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/" onclick="navigateTo('/'); return false;">Home</a></li>
-                <li><a href="/about" onclick="navigateTo('/about'); return false;">About</a></li>
-                <li><a href="/contact" onclick="navigateTo('/contact'); return false;">Contact</a></li>
-            </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abbez NET</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav id="main-navigation">
+          <ul>
+            <li>
+              <a href="/"><img src="/assets/img/house.png" alt="" />Home</a>
+            </li>
+            <li>
+              <a href="/about"
+                ><img src="/assets/img/information.png" alt="" />About</a
+              >
+            </li>
+            <li>
+              <a href="/projects"
+                ><img src="/assets/img/programming.png" alt="" />Projects</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Abbeez" target="_blank"
+                ><img src="/assets/img/social.png" alt="" />Github</a
+              >
+            </li>
+          </ul>
         </nav>
-    </header>
 
-    <div id="content">
-        <!-- Content will be dynamically replaced here -->
-    </div>
+        <img
+          src="/assets/img/crescent-moon.png"
+          alt=""
+          class="theme-switcher"
+        />
+      </header>
 
-    <footer>
+      <section id="introduction">
+        <div id="intro">
+          <h1>Hey, I'm Abraham</h1>
+          <p>
+            I'm a software developer who makes open-source projects and writes
+            about life, code, design, and more. Welcome to my digital garden.
+          </p>
+        </div>
+        <div id="thumbnail">
+          <img src="/assets/img/Abraham Fernandez.png" alt="" />
+        </div>
+      </section>
+
+      <section id="highlights">
+        <div class="section-heading">
+          <h2>Highlights</h2>
+        </div>
+
+        <div id="topics">
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/html-5.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">November 16, 2021</time>
+              <h3 class="topic-title">Understand HTML</h3>
+            </div>
+          </a>
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/css-3.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">July 02, 2021</time>
+              <h3 class="topic-title">Understand CSS</h3>
+            </div>
+          </a>
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/shopify.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">November 16, 2021</time>
+              <h3 class="topic-title">Store built with Shopify</h3>
+            </div>
+          </a>
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/wordpress.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">July 02, 2021</time>
+              <h3 class="topic-title">First CMS Platform</h3>
+            </div>
+          </a>
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/github.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">November 16, 2021</time>
+              <h3 class="topic-title">Introduction of Github</h3>
+            </div>
+          </a>
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/bootstrap.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">July 02, 2021</time>
+              <h3 class="topic-title">CSS Framework Boostrap</h3>
+            </div>
+          </a>
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/js.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">November 16, 2021</time>
+              <h3 class="topic-title">Learning Advance Javascript</h3>
+            </div>
+          </a>
+          <a href="#" class="topic">
+            <div class="topic-thumbnail">
+              <img src="/assets/img/icons/terminal.png" alt="" />
+            </div>
+            <div class="topic-header">
+              <time class="topic-date">July 02, 2021</time>
+              <h3 class="topic-title">Master CLI for Web Dev</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="section-heading">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects">
+          <div class="project">
+            <div class="project-date">2022</div>
+            <div class="project-rate">1,842</div>
+            <div class="project-content">
+              <h4>Be Global E-commerce Corporation</h4>
+              <p>This is the official website of BGE</p>
+              <button>Source</button>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-date">2022</div>
+            <div class="project-rate">1,842</div>
+            <div class="project-content">
+              <h4>Be Global E-commerce Corporation</h4>
+              <p>This is the official website of BGE</p>
+              <button>Source</button>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-date">2022</div>
+            <div class="project-rate">1,842</div>
+            <div class="project-content">
+              <h4>Be Global E-commerce Corporation</h4>
+              <p>This is the official website of BGE</p>
+              <button>Source</button>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-date">2022</div>
+            <div class="project-rate">1,842</div>
+            <div class="project-content">
+              <h4>Be Global E-commerce Corporation</h4>
+              <p>This is the official website of BGE</p>
+              <button>Source</button>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-date">2022</div>
+            <div class="project-rate">1,842</div>
+            <div class="project-content">
+              <h4>Be Global E-commerce Corporation</h4>
+              <p>This is the official website of BGE</p>
+              <button>Source</button>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-date">2022</div>
+            <div class="project-rate">1,842</div>
+            <div class="project-content">
+              <h4>Be Global E-commerce Corporation</h4>
+              <p>This is the official website of BGE</p>
+              <button>Source</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
         <!-- Footer content -->
-    </footer>
+        <section id="main-footer">
+          <div class="contacts">
+            <ul>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+              <li>Gmail</li>
+            </ul>
+          </div>
+          <div class="socials">
+            <ul>
+              <li>
+                <a href=""
+                  ><img
+                    src="/assets/img/socials/facebook (2).png"
+                    alt=""
+                  />Facebook</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="/assets/img/socials/instagram.png"
+                    alt=""
+                  />Instagram</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="/assets/img/socials/tiktok (2).png"
+                    alt=""
+                  />Tiktok</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </footer>
+    </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
