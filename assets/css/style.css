@@ -1,15 +1,28 @@
 
+:root {
+    --bg-color: #181818;
+    --text-color: #bbb;
+}
+
+
 
 body{
     background:#181818;
+    background-color: var(--bg-color);
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight:600;
     font-style: normal;
     font-size: 16px;
     line-height: 1.6;
-    color:#bbb;
+    color: var(--text-color);
+    overflow-x: hidden !important;
 } 
+
+.light-mode {
+    --bg-color: #fff;
+    --text-color: #222;
+}
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,27 +31,27 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   
   h3 {
-    font-size: 1.4rem;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-  }
-  
-  h5 {
     font-size: 1.3rem;
   }
   
-  h6 {
+  h4 {
     font-size: 1.2rem;
+  }
+  
+  h5 {
+    font-size: 1.1rem;
+  }
+  
+  h6 {
+    font-size: 1.0rem;
   }
   
   p {
@@ -105,10 +118,12 @@ section#introduction {
 
 section div#intro{
     width:70%;
+    flex-grow: 1;
 }
 
 section div#thumbnail{
     width:30%;
+    flex-grow: 1;
 }
 section#introduction p {
     font-size: 1.5rem;
@@ -117,17 +132,18 @@ section#introduction p {
 section#introduction img{
     width: 100%;
     max-width:430px;
+    min-width:250px;
     border-radius:50%;
 }
 
 
-div#topics {
+div#roadmaps {
     display: flex;
     flex-wrap: wrap;
     gap:20px 20px;
 }
 
-.topic {
+.roadmap {
     display:flex;
     gap:10px;
     width:40%;
@@ -138,7 +154,7 @@ div#topics {
     flex-grow: 1;
 }
 
-.topic .topic-thumbnail img{
+.roadmap .roadmap-thumbnail img{
     width:50px;
 }
 
@@ -148,7 +164,6 @@ div#topics {
     flex-direction: row;
     flex-wrap: wrap;
     gap:20px 20px;
-    /* justify-content: space-around; */
 }
 
 .project {
@@ -164,6 +179,25 @@ div#topics {
     flex-grow: 1;
 }
 
+.project img {
+    border-radius:4px;
+    height:120px;
+    width:100%;
+    object-fit: cover;
+}
+
+.project a{
+    background:#272626;
+    border:1px solid #3e3e3e;
+    padding:5px 8px;
+    border-radius:4px;
+    font-size:14px;
+    transition: 0.3s all;
+}
+
+.project a:hover{
+    background:#3e3e3e;
+}
 /* .project > div {
     flex:1;
 } */
@@ -216,3 +250,104 @@ width:30%;
         width:20px;
         margin-right:5px;
     }
+
+
+    @media only screen and (max-width: 480px) {
+        /* Styles for mobile devices in portrait orientation */
+    }
+    
+
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+        /* Styles for mobile devices in landscape orientation */
+
+        .section-heading{
+            text-align: center;
+        }
+        
+        section#introduction {
+            flex-direction: column;
+            text-align:center;
+            align-items:center;
+        }
+
+        section#introduction > div{
+            width:100%;
+        }
+
+        div#roadmaps {
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+        }
+        
+        .roadmap {
+  width:100%;
+        }
+        
+        .roadmap .roadmap-thumbnail img{
+            width:50px;
+        }
+
+        .projects {
+            flex-direction: column;
+        }
+        
+        .project {
+            width:100%;
+        }
+        
+        .project img {
+            border-radius:4px;
+            height:auto;
+            width:100%;
+            object-fit: cover;
+        }
+        
+        .project a{
+            background:#272626;
+            border:1px solid #3e3e3e;
+            padding:5px 8px;
+            border-radius:4px;
+            font-size:14px;
+            transition: 0.3s all;
+        }
+        
+        .project a:hover{
+            background:#3e3e3e;
+        }
+        /* .project > div {
+            flex:1;
+        } */
+        .project div:nth-child(1),
+        .project div:nth-child(2){
+        width:30%;
+        }
+        
+        .project div:nth-child(3){
+            width:100%;
+            }
+        
+        .project div:nth-child(2){
+            text-align: right;
+            }       
+    }
+    
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* Styles for tablets */
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1366px) {
+        /* Styles for small desktops and laptops */
+    }
+    
+
+    @media only screen and (min-width: 1367px) and (max-width: 1680px) {
+        /* Styles for medium desktops */
+    }
+    
+    @media only screen and (min-width: 1681px) {
+        /* Styles for large desktops */
+    }
+    
+    
