@@ -1,0 +1,49 @@
+:root {
+    /* System Defaults */
+    --text-line-height: 1.7rem;
+
+    /* System Colors */
+    --bg-color: #181818;
+    --text-color: #bbb;
+    --text-disable: #666666;
+    --text-link: #fffff;
+
+    /* System Fonts */
+
+    /* Start Heading CSS Variables */
+
+    /* Heading Font Family */
+    --heading-default: 'Raleway', sans-serif;
+    --heading-font-h1: var(--heading-default);
+    --heading-font-h2: var(--heading-default);
+    --heading-font-h3: var(--heading-default);
+    --heading-font-h4: var(--heading-default);
+    --heading-font-h5: var(--heading-default);
+    --heading-font-h6: var(--heading-default);
+
+    /* Heading Font Size */
+    --heading-default: 1.3rem;
+    --heading-font-h1: 2rem;
+    --heading-font-h2: 1.6rem;
+    --heading-font-h3: 1.3rem;
+    --heading-font-h4: 1.2rem;
+    --heading-font-h5: 1.1rem;
+    --heading-font-h6: 1rem;
+
+    /* End Heading CSS Variables */
+
+    /* Start Font CSS Variables */
+
+    /* Font Family */
+    --text-default: 16px;
+
+    /* End Font CSS Variables*/
+
+    /* Layout Variables */
+    --container-max: 980px;
+    --container-min: 450px;
+    --container-padding-top: 40px;
+    --container-padding-bottom: 40px;
+    --container-padding-left: 28px;
+    --container-padding-right: 28px;
+}

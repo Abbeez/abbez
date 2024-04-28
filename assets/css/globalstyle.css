@@ -1,0 +1,189 @@
+:root {
+    /* Colors */
+    --primary-color: #007bff;
+    /* Default primary color */
+    --secondary-color: #6c757d;
+    /* Default secondary color */
+    --background-color: #181818;
+    /* Default background color */
+    --text-color: #bbb;
+    /* Default text color */
+    --border-color: #ced4da;
+    /* Default border color */
+
+    /* Typography */
+    --font-family: 'Raleway', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.6;
+    --heading-font-weight: bold;
+    /* Default heading font weight */
+    --heading-margin-bottom: 10px;
+    /* Default margin bottom for headings */
+    --link-color: #bbb;
+    /* Default link color */
+    --link-hover-color: #ccc;
+    /* Default link hover color */
+
+    /* Heading Font Family */
+    --heading-default: 'Raleway', sans-serif;
+    --heading-font-h1: var(--heading-default);
+    --heading-font-h2: var(--heading-default);
+    --heading-font-h3: var(--heading-default);
+    --heading-font-h4: var(--heading-default);
+    --heading-font-h5: var(--heading-default);
+    --heading-font-h6: var(--heading-default);
+
+    /* Heading Font Size */
+    --heading-default: 1.3rem;
+    --heading-font-h1: 1.8rem;
+    --heading-font-h2: 1.6rem;
+    --heading-font-h3: 1.4rem;
+    --heading-font-h4: 1.2rem;
+    --heading-font-h5: 1.1rem;
+    --heading-font-h6: 1rem;
+
+    /* Buttons */
+    --button-background-color: var(--secondary-color);
+    --button-text-color: white;
+    --button-padding: 10px 20px;
+    --button-border-radius: 4px;
+    --button-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Default box shadow for buttons */
+    --button-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    /* Default text shadow for buttons */
+    --button-border-width: 1px;
+    /* Default border width for buttons */
+    --button-border-style: solid;
+    /* Default border style for buttons */
+    --button-border-color: transparent;
+    /* Default border color for buttons */
+
+    /* Images */
+    --image-border-radius: 8px;
+    --image-opacity: 1;
+    /* Default opacity for images */
+    --image-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Default box shadow for images */
+    --image-border-width: 1px;
+    /* Default border width for images */
+    --image-border-style: solid;
+    /* Default border style for images */
+    --image-border-color: transparent;
+    /* Default border color for images */
+
+    /* Form Fields */
+    --input-border-color: var(--border-color);
+    --input-border-width: 1px;
+    /* Default border width for form fields */
+    --input-border-style: solid;
+    /* Default border style for form fields */
+    --input-border-radius: 4px;
+    --input-padding: 8px;
+
+    /* Background */
+    --page-background: var(--background-color);
+
+    /* Layout settings */
+    --content-width: 780px;
+    --gap: 20px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    background-color: var(--page-background);
+    color: var(--text-color);
+    transition: 0.5s background-color;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: var(--content-width);
+    min-width: 430px;
+    padding: 1rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.light-mode {
+    --background-light: #fff;
+    background: var(--background-light);
+    --text-color: #222;
+}
+
+.header-light {
+    --background-light: #fff;
+    background: var(--background-light) !important;
+    --text-color: #222 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--heading-font-weight);
+    margin-bottom: var(--heading-margin-bottom);
+    /* Add additional heading styles as needed */
+}
+
+h1 {
+    font-size: var(--heading-font-h1);
+}
+
+h2 {
+    font-size: var(--heading-font-h2);
+}
+
+h3 {
+    font-size: var(--heading-font-h3);
+}
+
+h4 {
+    font-size: var(--heading-font-h4);
+}
+
+h5 {
+    font-size: var(--heading-font-h5);
+}
+
+h6 {
+    font-size: var(--heading-font-h6);
+}
+
+
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: var(--button-border-width) var(--button-border-style) var(--button-border-color);
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    box-shadow: var(--button-box-shadow);
+    text-shadow: var(--button-text-shadow);
+}
+
+img {
+    border-radius: var(--image-border-radius);
+    opacity: var(--image-opacity);
+    box-shadow: var(--image-box-shadow);
+    border: var(--image-border-width) var(--image-border-style) var(--image-border-color);
+    /* Add additional image styles as needed */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    border: var(--input-border-width) var(--input-border-style) var(--input-border-color);
+    padding: var(--input-padding);
+    border-radius: var(--input-border-radius);
+    /* Add additional form field styles as needed */
+}

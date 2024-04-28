@@ -1,7 +1,8 @@
 const darkModeToggle = document.querySelector('.theme-switcher');
 const body = document.body;
+const headerNav = document.querySelector('.navigation');
 
 darkModeToggle.addEventListener('click', () => {
   body.classList.toggle('light-mode');
-  //   body.style.display = 'none';
+  headerNav.classList.toggle('header-light');
 });
