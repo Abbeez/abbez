@@ -172,12 +172,12 @@ div#roadmaps {
     align-items: center;
     border: 1px solid #3e3e3e;
     border-radius: 8px;
-    padding: 14px;
+    padding: 14px 8px;
     flex-grow: 1;
 }
 
 .roadmap .roadmap-thumbnail img {
-    width: 50px;
+    width: 45px;
 }
 
 .roadmap h3 {
@@ -231,7 +231,7 @@ div#roadmaps {
     border-radius: 8px;
     width: 30%;
     flex-grow: 1;
-
+    background: #1F1F1F;
 }
 
 .project h4 {
@@ -258,6 +258,8 @@ div#roadmaps {
     transition: 0.3s all;
     display: inline-block;
     margin-top: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .project a:hover {
@@ -275,97 +277,44 @@ div#roadmaps {
 }
 
 @media only screen and (max-width: 480px) {
-    .project {
+    /* .project {
         width: 100%;
         flex-grow: 1;
 
-    }
+    } */
+}
+
+footer {
+    margin-top: 60px;
 }
 
 footer #main-footer .container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
 }
 
 footer #main-footer .contacts,
-footer #main-footer .socials {
-    width: 40%;
-}
-
-footer #main-footer .contacts ul,
-footer #main-footer .socials ul {
-    display: flex;
-    gap: 15px;
+footer #main-footer .copyright {
     width: 100%;
+    flex-grow: 1;
 }
 
 footer #main-footer .contacts ul {
-    justify-content: flex-start;
-}
-
-footer #main-footer .socials ul {
-    justify-content: flex-end;
-}
-
-footer #main-footer .socials img {
-    width: 20px;
-    margin-right: 5px;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
 }
 
 
-@media only screen and (max-width: 480px) {
-    /* Styles for mobile devices in portrait orientation */
-}
-
-@media only screen and (max-width: 767px) {
 
 
+@media only screen and (max-width: 480px) {}
 
-    /* .projects {
-        flex-direction: column;
-    }
-
-    .project {
-        width: 100%;
-    }
-
-    .project img {
-        border-radius: 4px;
-        height: auto;
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .project a {
-        background: #272626;
-        border: 1px solid #3e3e3e;
-        padding: 5px 8px;
-        border-radius: 4px;
-        font-size: 14px;
-        transition: 0.3s all;
-    }
-
-    .project a:hover {
-        background: #3e3e3e;
-    }
-
-    .project div:nth-child(1),
-    .project div:nth-child(2) {
-        width: 30%;
-    }
-
-    .project div:nth-child(3) {
-        width: 100%;
-    }
-
-    .project div:nth-child(2) {
-        text-align: right;
-    } */
-
-
-}
+@media only screen and (max-width: 767px) {}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* Styles for tablets */
