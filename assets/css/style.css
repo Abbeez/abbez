@@ -300,6 +300,7 @@ footer #main-footer .contacts,
 footer #main-footer .copyright {
     width: 100%;
     flex-grow: 1;
+    text-align: center
 }
 
 footer #main-footer .contacts ul {
